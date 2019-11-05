@@ -1,0 +1,4 @@
+#Tue Nov 05 22:07:45 IST 2019
+base.0=C\:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+path.0=classes.dex
+renamed.0=classes.dex
