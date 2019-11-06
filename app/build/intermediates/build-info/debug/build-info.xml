@@ -1,35 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="28"
-    build-mode="HOT_WARM"
-    density="440dpi"
+    abi="armeabi-v7a,armeabi"
+    api-level="25"
+    build-mode="COLD"
+    density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.4.2"
-    timestamp="1572972339851"
+    timestamp="1573014368778"
     token="1997199206988677496"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="514" />
+        duration="560" />
     <task
         name="instant-run-dex"
-        duration="106" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="150" />
+        duration="59" />
     <task
         name="verifier"
-        duration="28" />
+        duration="20" />
 
     <artifact
-        location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1572971991283"
+        timestamp="1573013044215"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
@@ -48,9 +49,6 @@
             type="SPLIT" />
         <artifact
             location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
-        <artifact
-            location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
             location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
@@ -74,43 +72,11 @@
     <build
         build-mode="COLD"
         ir-eligibility="COMPATIBLE"
-        timestamp="1572972148174"
+        timestamp="1573014368778"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1572972190528"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\builds\debug\1572972190528\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1572972219633"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\builds\debug\1572972219633\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1572972301916"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\builds\debug\1572972301916\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        build-mode="HOT_WARM"
-        timestamp="1572972339851"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="C:\Users\GAURAV\AndroidStudioProjects\TreasureHunt\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

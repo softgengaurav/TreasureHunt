@@ -39,18 +39,22 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.opencsv.CSVWriter;
 //import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener {
 
+    ArrayList<Marker> markerArray;
+    ArrayList<Marker> movement;
     String root;
     File myDir;
     private GoogleMap mMap;
@@ -92,6 +96,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        markerArray = new ArrayList<Marker>();
+        movement = new ArrayList<Marker>();
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -138,7 +144,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     Toast.makeText(getApplicationContext(), "Connecting to APIClient", Toast.LENGTH_SHORT).show();
                     mGoogleApiClient.connect();
                 }
-                startLocationUpdates();
+               // startLocationUpdates();
+                data.append("\n" + String.valueOf(latitude) + "," + String.valueOf(longitude));
+                markerArray.add(mMap.addMarker(new MarkerOptions()
+                        .position(new LatLng(latitude, longitude))
+                        .title("Title!")
+                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))));
+
             }
         });
 
@@ -191,7 +203,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             return;
         }
 
-        //startLocationUpdates();
+        startLocationUpdates();
 
         mLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
@@ -271,20 +283,40 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         // You can now create a LatLng Object for use with maps
         //LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
-        LatLng pos = new LatLng(location.getLatitude(), location.getLongitude());
+        //LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
+        latitude = location.getLatitude();
+        longitude = location.getLongitude();
 
-        mMap.addMarker(new MarkerOptions()
+        LatLng pos = new LatLng(latitude, longitude);
+
+
+        int size;
+        size = movement.size();
+        if(size>1)
+        {
+            for(Marker mark: movement)
+            {
+                mark.setVisible(false);
+            }
+        }
+        movement.add(mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .title("Title!")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))); // Don't necessarily need title
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))));
+        //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))); // Don't necessarily need title
+        // Toast.makeText(getApplicationContext(),String.valueOf(pos), Toast.LENGTH_SHORT).show();
+
+   /*     mMap.addMarker(new MarkerOptions()
+                .position(pos)
+                .title("Title!")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))); // Don't necessarily need title*/
         // Toast.makeText(getApplicationContext(),String.valueOf(pos), Toast.LENGTH_SHORT).show();
 
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(pos));
         float zoomLevel = 16.0f; //This goes up to 21
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pos, zoomLevel));
 
-        data.append("\n" + String.valueOf(location.getLatitude()) + "," + String.valueOf(location.getLongitude()));
+        //data.append("\n" + String.valueOf(location.getLatitude()) + "," + String.valueOf(location.getLongitude()));
 
     }
 

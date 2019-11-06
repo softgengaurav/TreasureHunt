@@ -49,6 +49,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         GoogleApiClient.OnConnectionFailedListener, com.google.android.gms.location.LocationListener {
 
     ArrayList<Marker> markerArray;
+    ArrayList<Marker> movement;
     String root;
     File myDir;
     private GoogleMap mMap;
@@ -61,8 +62,8 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
     private TextView mLatitudeTextView;
     private TextView mLongitudeTextView;
     private Button mstart;
-    private double longitude;
-    private double latitude;
+    private double currLongitude;
+    private double currLatitude;
     private TextView mspeed;
     private ListView mlist;
     private GoogleApiClient mGoogleApiClient;
@@ -90,6 +91,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        movement = new ArrayList<Marker>();
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -119,7 +121,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         Intent second_intent_maps = getIntent();
 
         String fname = myDir + "/" + second_intent_maps.getStringExtra("ITEM_SELECTED");
-        Toast.makeText(getApplicationContext(),fname, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(),fname, Toast.LENGTH_SHORT).show();
 
         InputStream instream = null;
         try {
@@ -148,7 +150,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
             double lon = Double.parseDouble(line.split(",")[1]);
             latLngList.add(new LatLng(lat, lon));
         }
-        Toast.makeText(getApplicationContext(),String.valueOf(latLngList.size()), Toast.LENGTH_SHORT).show();
+ //       Toast.makeText(getApplicationContext(),String.valueOf(latLngList.size()), Toast.LENGTH_SHORT).show();
 
 // Add them to map
         markerArray = new ArrayList<Marker>();
@@ -160,13 +162,11 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)))); // Don't necessarily need title
             // Toast.makeText(getApplicationContext(),String.valueOf(pos), Toast.LENGTH_SHORT).show();
 
-            //mMap.moveCamera(CameraUpdateFactory.newLatLng(pos));
-            float zoomLevel = 16.0f; //This goes up to 21
-            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pos, zoomLevel));
         }
 
         for(Marker mark : markerArray)
         {
+  //          Toast.makeText(getApplicationContext(),"Marker hidden", Toast.LENGTH_SHORT).show();
             mark.setVisible(false);
         }
 
@@ -196,7 +196,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
             //      mLatitudeTextView.setText(String.valueOf(mLocation.getLatitude()));
             //      mLongitudeTextView.setText(String.valueOf(mLocation.getLongitude()));
         } else {
-            Toast.makeText(this, "Location not Detected", Toast.LENGTH_SHORT).show();
+   //         Toast.makeText(this, "Location not Detected", Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -233,7 +233,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY)
                 .setInterval(UPDATE_INTERVAL)
                 .setFastestInterval(FASTEST_INTERVAL);
-        Toast.makeText(this, "checking for location", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "checking for location", Toast.LENGTH_SHORT).show();
         // Request location updates
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // TODO: Consider calling
@@ -261,21 +261,61 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         //mLongitudeTextView.setText(String.valueOf(location.getLongitude() ));
         //mspeed.setText(location.getSpeed()+" m/s");
 
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         // You can now create a LatLng Object for use with maps
         //LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
-        LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
+        //LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
         LatLng pos = new LatLng(location.getLatitude(), location.getLongitude());
 
-        mMap.addMarker(new MarkerOptions()
+        currLatitude = location.getLatitude();
+        currLongitude = location.getLongitude();
+
+        double markLatitude;
+        double markLongitude;
+
+        double distanceValue;
+        for(Marker mark: markerArray)
+        {
+            markLatitude = mark.getPosition().latitude;
+            markLongitude = mark.getPosition().longitude;
+
+            distanceValue = distance(currLatitude, currLongitude, markLatitude, markLongitude);
+
+          //  Toast.makeText(this, "Distance Value is "+distanceValue, Toast.LENGTH_SHORT).show();
+
+            if(distance(currLatitude, currLongitude, markLatitude, markLongitude) < 20)
+            {
+                mark.setVisible(true);
+            }
+            else
+            {
+                mark.setVisible(false);
+            }
+
+        }
+
+        int size;
+        size = movement.size();
+        if(size>1)
+        {
+            for(Marker mark: movement)
+            {
+                mark.setVisible(false);
+            }
+        }
+
+
+
+        movement.add(mMap.addMarker(new MarkerOptions()
                 .position(pos)
-                .title("Title!"));
+                .title("Title!")));
                 //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))); // Don't necessarily need title
         // Toast.makeText(getApplicationContext(),String.valueOf(pos), Toast.LENGTH_SHORT).show();
 
         //mMap.moveCamera(CameraUpdateFactory.newLatLng(pos));
         float zoomLevel = 16.0f; //This goes up to 21
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(pos, zoomLevel));
+
 
 
     }
@@ -317,6 +357,27 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
     public void stop(View view)
     {
         clicked=true;
+    }
+
+    private double distance(double lat1, double lon1, double lat2, double lon2) {
+        double theta = lon1 - lon2;
+        double dist = Math.sin(deg2rad(lat1))
+                * Math.sin(deg2rad(lat2))
+                + Math.cos(deg2rad(lat1))
+                * Math.cos(deg2rad(lat2))
+                * Math.cos(deg2rad(theta));
+        dist = Math.acos(dist);
+        dist = rad2deg(dist);
+        dist = (dist * 60 * 1.1515 * 1.609344)*1000;
+        return (dist);
+    }
+
+    private double deg2rad(double deg) {
+        return (deg * Math.PI / 180.0);
+    }
+
+    private double rad2deg(double rad) {
+        return (rad * 180.0 / Math.PI);
     }
 }
 
