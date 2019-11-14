@@ -696,6 +696,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1075,6 +1076,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable checkpoint
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -1188,6 +1190,8 @@ id adjust_width
 id alertTitle
 id all
 id always
+id ans
+id ansCurrent
 id async
 id auto
 id barrier
@@ -1221,6 +1225,7 @@ id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
 id dialog_button
+id dialog_ok
 id dimensions
 id direct
 id disableHome
@@ -1292,6 +1297,8 @@ id percent
 id pin
 id progress_circular
 id progress_horizontal
+id ques
+id quesCurrent
 id radio
 id right
 id right_icon
@@ -1336,9 +1343,11 @@ id src_in
 id src_over
 id standard
 id start
+id status
 id stop_button
 id stretch
 id submenuarrow
+id submit
 id submit_area
 id tabMode
 id tag_accessibility_actions
@@ -1456,6 +1465,8 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout dialog_layout
+layout dialog_layout_result
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action
@@ -1470,6 +1481,7 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw style_json
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

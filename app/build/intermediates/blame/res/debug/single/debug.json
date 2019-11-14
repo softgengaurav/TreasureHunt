@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_animation.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-ldrtl-xhdpi-v17\\abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_animation.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -16,20 +16,20 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color\\abc_tint_spinner.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
-    },
-    {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\abc_fade_in.xml"
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_shrink_fade_out_from_bottom.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_fade_in.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color\\abc_btn_colored_text_material.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_track_material.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_btn_colored_text_material.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color\\abc_btn_colored_text_material.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_list_divider_material.xml.flat",
@@ -80,20 +80,20 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\layout\\abc_action_bar_up_container.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_maps2.xml.flat",
         "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\layout\\activity_maps2.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xxhdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-ldrtl-xxhdpi-v17\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_36dp.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_ic_star_black_36dp.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_textfield_search_material.xml.flat",
@@ -114,6 +114,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xhdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\raw_style_json.json.flat",
+        "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\raw\\style_json.json"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_seekbar_thumb_material.xml.flat",
@@ -172,24 +176,24 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_seek_thumb.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xxhdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\84d49bcef60a546b73610f2829194aee\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable\\abc_item_background_holo_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_button_bar_material.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_item_background_holo_dark.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ratingbar_indicator_material.xml.flat",
@@ -236,20 +240,20 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\acf7036162a7c709668398e813113c49\\res\\color\\mtrl_tabs_ripple_color.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color-v23\\abc_tint_default.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color-v23_abc_tint_default.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\color-v23\\abc_tint_default.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_in.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\acf7036162a7c709668398e813113c49\\res\\anim\\design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_ripple_color.xml.flat",
@@ -300,20 +304,20 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xxhdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\8095fcf18c0f5bc299edc695783e1b0f\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\84d49bcef60a546b73610f2829194aee\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_common_google_signin_btn_text_light_focused.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\8095fcf18c0f5bc299edc695783e1b0f\\res\\drawable\\common_google_signin_btn_text_light_focused.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\84d49bcef60a546b73610f2829194aee\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\anim\\btn_radio_to_on_mtrl_ring_outer_path_animation.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\interpolator-v21_mtrl_linear_out_slow_in.xml.flat",
@@ -332,12 +336,12 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xhdpi-v4\\abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\8095fcf18c0f5bc299edc695783e1b0f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_item_material.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\8095fcf18c0f5bc299edc695783e1b0f\\res\\drawable-xxhdpi-v4\\common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_colored_ripple_color.xml.flat",
@@ -392,12 +396,12 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\84d49bcef60a546b73610f2829194aee\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-hdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\84d49bcef60a546b73610f2829194aee\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-hdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -756,6 +760,10 @@
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_checkpoint.png.flat",
+        "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\drawable\\checkpoint.png"
+    },
+    {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_text_btn_text_color_selector.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\acf7036162a7c709668398e813113c49\\res\\color\\mtrl_text_btn_text_color_selector.xml"
     },
@@ -806,6 +814,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_star_black_16dp.png.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-mdpi-v4\\abc_ic_star_black_16dp.png"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\color_green.xml.flat",
+        "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\color\\green.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_add_circle_outline_black_18dp.png.flat",
@@ -1126,6 +1138,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_abc_edit_text_material.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\eadeb82f654e5ce0bba71512fcd06a5e\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_layout.xml.flat",
+        "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\layout\\dialog_layout.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_design_navigation_item.xml.flat",
@@ -2202,6 +2218,10 @@
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_snackbar_out.xml.flat",
         "source": "C:\\Users\\GAURAV\\.gradle\\caches\\transforms-2\\files-2.1\\acf7036162a7c709668398e813113c49\\res\\anim\\design_snackbar_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialog_layout_result.xml.flat",
+        "source": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\src\\main\\res\\layout\\dialog_layout_result.xml"
     },
     {
         "merged": "C:\\Users\\GAURAV\\AndroidStudioProjects\\TreasureHunt\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_googleg_standard_color_18.png.flat",

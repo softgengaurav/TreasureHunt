@@ -9,6 +9,7 @@ import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -21,9 +22,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
+import android.text.InputType;
 import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -39,6 +45,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.opencsv.CSVWriter;
@@ -61,6 +68,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     LocationManager locationManager;
     Button mark_button;
     Button stop_button;
+    int markerCount;
     //private LocationListener listener;
     private StringBuilder data;
     private static final String TAG = "MainActivity";
@@ -85,6 +93,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     boolean clicked = false;
     int click = 0;
     int start = 0;
+    String m_Text;
+    String question;
+    String answer;
 
 
     @Override
@@ -122,6 +133,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        markerCount = 0;
+        boolean success = googleMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.style_json));
         root = android.os.Environment.getExternalStorageDirectory().toString();
         myDir = new File(root + "/TreasureHunt");
         Toast.makeText(getApplicationContext(), "Map Ready", Toast.LENGTH_SHORT).show();
@@ -129,6 +142,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mark_button = findViewById(R.id.mark_button);
         stop_button = findViewById(R.id.stop_button);
         data = new StringBuilder();
+        m_Text = new String();
         mark_button.setOnClickListener(new View.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.M)
             @Override
@@ -145,11 +159,57 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     mGoogleApiClient.connect();
                 }
                // startLocationUpdates();
-                data.append("\n" + String.valueOf(latitude) + "," + String.valueOf(longitude));
+                //data.append("\n" + String.valueOf(latitude) + "," + String.valueOf(longitude) + "," + String.valueOf(markerCount));
                 markerArray.add(mMap.addMarker(new MarkerOptions()
                         .position(new LatLng(latitude, longitude))
-                        .title("Title!")
-                        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))));
+                        .title(String.valueOf(markerCount))
+                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.checkpoint))));
+
+
+                m_Text = "";
+                final Dialog builder = new Dialog(MapsActivity.this);
+                builder.setContentView(R.layout.dialog_layout);
+
+
+                Button button = (Button) builder.findViewById(R.id.dialog_ok);
+                button.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+
+                        EditText ques=(EditText)builder.findViewById(R.id.ques);
+                        question=ques.getText().toString();
+                        EditText ans=(EditText)builder.findViewById(R.id.ans);
+                        answer=ans.getText().toString();
+                        Toast.makeText(getApplicationContext(),question + ":" + answer, Toast.LENGTH_SHORT).show();
+                        builder.dismiss();
+                        data.append("\n" + String.valueOf(latitude) + "," + String.valueOf(longitude) + "," + String.valueOf(markerCount) + ","
+                                + question + "," + answer);
+
+                        markerCount += 1;
+                    }});
+
+                /*
+                final TextView ques = (TextView) builder.findViewById(R.id.ques);
+                final TextView ans = (TextView) findViewById(R.id.ans);
+// Set up the buttons
+                builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                       // m_Text = input.getText().toString();
+                        m_Text = ques.getText().toString() + ans.getText().toString();
+                        Toast.makeText(getApplicationContext(), ques + "," + ans, Toast.LENGTH_SHORT).show();
+
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });*/
+                builder.getWindow().getAttributes().width = WindowManager.LayoutParams.FILL_PARENT;
+                builder.show();
+
+
 
             }
         });
@@ -280,10 +340,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         //mLongitudeTextView.setText(String.valueOf(location.getLongitude() ));
         //mspeed.setText(location.getSpeed()+" m/s");
 
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+       // Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
         // You can now create a LatLng Object for use with maps
         //LatLng latLng = new LatLng(location.getLatitude(), location.getLongitude());
         //LocationServices.FusedLocationApi.removeLocationUpdates(mGoogleApiClient, this);
+
         latitude = location.getLatitude();
         longitude = location.getLongitude();
 
@@ -299,10 +360,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 mark.setVisible(false);
             }
         }
-        movement.add(mMap.addMarker(new MarkerOptions()
+        Marker obj = mMap.addMarker(new MarkerOptions()
                 .position(pos)
                 .title("Title!")
-                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))));
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+        movement.add(obj);
         //.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))); // Don't necessarily need title
         // Toast.makeText(getApplicationContext(),String.valueOf(pos), Toast.LENGTH_SHORT).show();
 
